@@ -18,7 +18,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.horsingfront"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -27,5 +28,5 @@
       "expo-router"
     ],
     "scheme": "your-app-scheme"
-  }  
+  }
 }
