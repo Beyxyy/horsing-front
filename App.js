@@ -6,6 +6,9 @@ import HomeScreen from './Screens/Home';
 import DetailScreen from './Screens/detailScreen';
 
 
+// should be interesting to see how to decline this mecanism for my use case
+// https://stackoverflow.com/questions/41003209/using-context-in-react-native?rq=3
+
 export default function App() {
   
   const Stack = createNativeStackNavigator()
