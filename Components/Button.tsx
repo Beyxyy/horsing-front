@@ -5,7 +5,7 @@ import {Pressable, Text, View} from 'react-native';
 export default function Button({label, onPress}) {
   return (
     <View>
-      <Pressable>
+      <Pressable onPress={onPress}>
         <Text>{label}</Text>
       </Pressable>
     </View>

@@ -1,19 +1,21 @@
 import { StyleSheet, View, Text } from "react-native";
 import Button from "../Components/Button";
+import { useContext } from "react";
+import { setGlobalContext} from "../Hooks/GlobalContext";
+import LoginScreen from "./Login";
 
 
 export default function HomeScreen({navigation}) {
-    return (
-      <View style={styles.container}>
-        <Text>En gros je teste</Text>
-        <View>
-          <Text>Test</Text>
-          
-        </View>
-        <Button label="Test" onPress={()=>console.log('test')}/>
-      </View>
-    );
+
+  // const user = useContext(setGlobalContext.datas);
+  return (
+    <View style={styles.container}>
+      <Text>En gros je teste</Text>
+      <Button label="Test" onPress={() => navigation.push("Details")}/>
+    </View>
+  );
   }
+
   
   const styles = StyleSheet.create({
     container: {

@@ -4,7 +4,7 @@ const GlobalContext = createContext({});
 
 
 
-export function useGlobalContext({children}) {
+export function setGlobalContext({children}) {
   
     const [datas, setDatas] = useState({});
 
@@ -17,7 +17,7 @@ export function useGlobalContext({children}) {
     }
 
     return(
-        <GlobalContext.Provider value={{datas, addGlobalContextData, removeGlobalContextData}}>
+        <GlobalContext.Provider value={"test"}>
             {children}
         </GlobalContext.Provider>
     )
