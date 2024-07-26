@@ -24,6 +24,8 @@ export default function App() {
             {/* Passing some data to the Details screen */}
             <Stack.Screen name="Details">{(props) => <DetailScreen {...props} extraData={someData} />}</Stack.Screen>
 
+            <Stack.Screen name="Profile" component={ProfileScreen}/>
+            
         </Stack.Navigator>
     </NavigationContainer>
   );
